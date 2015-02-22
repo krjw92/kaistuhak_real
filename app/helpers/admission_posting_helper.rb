@@ -1,0 +1,2 @@
+module AdmissionPostingHelper
+end

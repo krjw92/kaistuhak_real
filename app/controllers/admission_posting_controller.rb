@@ -1,6 +1,6 @@
 class AdmissionPostingController < ApplicationController
   def posts
-		@posts = Post.paginated(:page => params[:page], :per_page => 20)
+		@posts = AdmissionPosting.paginate(:page => params[:page], :per_page => 20)
   end
 
   def posts_category

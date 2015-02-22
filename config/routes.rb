@@ -1,5 +1,5 @@
 Kaistuhak::Application.routes.draw do
-  root "admission_posting/posts"
+  root "admission_posting#posts"
   get "admission_posting/posts_category"
   get "admission_posting/show"
   get "admission_posting/write"

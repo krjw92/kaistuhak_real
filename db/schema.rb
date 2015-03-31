@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221153054) do
+ActiveRecord::Schema.define(version: 20150307082908) do
 
   create_table "admission_postings", force: true do |t|
     t.integer  "user_id"
@@ -26,6 +26,16 @@ ActiveRecord::Schema.define(version: 20150221153054) do
     t.integer  "user_id"
     t.integer  "post_id"
     t.string   "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "board"
+    t.string   "title"
+    t.text     "content"
+    t.integer  "hit"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

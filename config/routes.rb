@@ -1,13 +1,6 @@
 Kaistuhak::Application.routes.draw do
-  root "admission_posting#posts"
-  get "admission_posting/posts_category"
-  get "admission_posting/show"
-  get "admission_posting/write"
-  get "admission_posting/write_complete"
-  get "admission_posting/edit"
-  get "admission_posting/edit_complete"
-  get "admission_posting/delete"
-  get "admission_posting/delete_complete"
+  get "wall/write"
+  get "wall/posts"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Kaistuhak</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-
-
-<%= render :partial => "layouts/header" %>
-</head>
-<body>
-
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Kaistuhak</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="skin-blue">
+    <div class="wrapper">
+      <header class="main-header">
+        <%= render :partial => "layouts/header" %>
+      </header>
+      <!-- Left side column. contains the sidebar -->
+      <aside class="main-sidebar">
+        <%= render :partial => "layouts/aside" %>
+      </aside>
+      <%= yield %>
+      <footer class="main-footer">
+      </footer>
+    </div>
+  </body>
 </html>
